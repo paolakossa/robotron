@@ -1,7 +1,6 @@
 const controle = document.querySelectorAll('[data-controle]');
 const estatisticas = document.querySelectorAll('[data-estatistica]');
 
-
 const pecas = {
     "bracos": {
         "forca": 29,
@@ -61,5 +60,8 @@ function atualizaEstatistica(peca) {
     elemento.textContent = parseInt(elemento.textContent) + pecas[peca] [elemento.dataset.estatistica]
    })
     
-}
+};
 
+function trocaImagem(cor){
+    document.querySelector(".robo").src="img/Robotron 2000 - " + cor + ".png";
+ }
